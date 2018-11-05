@@ -1,4 +1,4 @@
-package com.ibnu.footballclubs
+package com.ibnu.footballclubs.Data
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 

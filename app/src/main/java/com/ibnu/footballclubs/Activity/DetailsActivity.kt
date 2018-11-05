@@ -1,11 +1,9 @@
-package com.ibnu.footballclubs
+package com.ibnu.footballclubs.Activity
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import android.widget.ImageView
-import android.widget.TextView
+import com.ibnu.footballclubs.R
 import org.jetbrains.anko.*
 
 class DetailsActivity : AppCompatActivity() {

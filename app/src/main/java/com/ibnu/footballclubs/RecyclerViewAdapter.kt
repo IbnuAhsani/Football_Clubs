@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import com.ibnu.footballclubs.Data.Item
 import com.squareup.picasso.Picasso
 import kotlinx.android.extensions.LayoutContainer
-import kotlinx.android.synthetic.main.item_list.view.*
 import org.jetbrains.anko.*
 
 class RecyclerViewAdapter(

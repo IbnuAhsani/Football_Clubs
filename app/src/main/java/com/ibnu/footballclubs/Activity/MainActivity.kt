@@ -1,12 +1,12 @@
-package com.ibnu.footballclubs
+package com.ibnu.footballclubs.Activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.view.View
-import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import com.ibnu.footballclubs.Data.Item
+import com.ibnu.footballclubs.R
+import com.ibnu.footballclubs.RecyclerViewAdapter
 import org.jetbrains.anko.*
 import org.jetbrains.anko.recyclerview.v7.recyclerView
 
@@ -35,8 +35,12 @@ class MainActivity : AppCompatActivity() {
         }
         */
 
-        userInterface.recyclerView.adapter = RecyclerViewAdapter(this@MainActivity, items){
-            startActivity<DetailsActivity>("name" to it.name, "image" to it.image, "details" to it.details)
+        userInterface.recyclerView.adapter = RecyclerViewAdapter(this@MainActivity, items) {
+            startActivity<DetailsActivity>(
+                "name" to it.name,
+                "image" to it.image,
+                "details" to it.details
+            )
         }
     }
 
